@@ -1,0 +1,26 @@
+CREATE INDEX subs_debt_status_idx2 ON subs_debt_status (subscription_id)
+/
+
+ALTER TABLE subscriptions DROP COLUMN DEBT_ALLOWED
+/
+
+ALTER TABLE subscriptions DROP COLUMN TEMP_BLOCKED_ALLOWED
+/
+
+ALTER TABLE subscriptions DROP COLUMN DEBT_REMEMBER_DAYS
+/
+
+ALTER TABLE subscriptions DROP COLUMN CHARGE_DEBT_IFCLOSED
+/
+
+ALTER TABLE subscriptions DROP COLUMN FORGIVE_DEBT_IFCHARGED
+/
+
+ALTER TABLE subscriptions DROP COLUMN MAX_DEBT_AMOUNT_PER_DAY
+/
+
+ALTER TABLE subs_debt_status DROP COLUMN DEBT_REMEMBER_DAYS
+/
+
+ALTER TABLE recharges ADD CONSTRAINT recharges_un1 UNIQUE (tx_id)
+/

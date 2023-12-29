@@ -1,0 +1,459 @@
+databaseChangeLog:
+- changeSet:
+    id: 20200406-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00010.sql
+        relativeToChangelogFile: true
+- changeSet:
+      id: 20200407-1
+      author: igor
+      changes:
+      - sqlFile:
+         path: V1-00020.sql
+         relativeToChangelogFile: true
+- changeSet:
+    id: 20200407-2
+    author: igor
+    changes:
+      - sqlFile:
+          path: V1-00030.sql
+          relativeToChangelogFile: true
+- changeSet:
+    id: 20200409-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00040.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200409-2
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00050.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200410-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00060.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200420-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00070.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200420-2
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00080.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200420-3
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00090.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200423-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00100.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200428-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00110.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200430-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00120.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200506-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00130.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200506-2
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00140.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20200706-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00150.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220819-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00151.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220823-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00152.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220823-2
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00153.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220823-3
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00154.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220824-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00155.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220824-2
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00156.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220825-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00157.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220830-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00158.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220831-1
+    author: igor
+    changes:
+        - sqlFile:
+              path: V1-00159.sql
+              relativeToChangelogFile: true
+- changeSet:
+    id: 20220906-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00160.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220907-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00161.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220909-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00162.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220910-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00163.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220912-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00164.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220914-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00165.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220927-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00170.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20220928-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00180.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221012-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00190.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221012-2
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00200.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221215-1
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00210.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221215-2
+    author: igor
+    changes:
+    - sqlFile:
+        path: V1-00220.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221215-3
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00230.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221216-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00240.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221220-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00250.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221201-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00211.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221201-1.1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00215.sql
+        relativeToChangelogFile: true
+        splitStatements: false
+- changeSet:
+    id: 20221201-2
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00212.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221201-3
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00213.sql
+        relativeToChangelogFile: true
+        splitStatements: false
+- changeSet:
+    id: 20221201-4
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00214.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221208-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00255.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221223-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00260.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221226-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00270.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20221229-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00280.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230120-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00290.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230125-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00300.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230125-2
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00310.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230127-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00320.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230127-2
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-00330.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230130-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-10010.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230208-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20010.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230209-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20020.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230220-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20030.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230222-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20040.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230221-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20050.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230315-1
+    author: i.borisovskiy
+    failOnError: false
+    changes:
+    - sqlFile:
+        path: V1-10020.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230202-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-10030.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230321-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20060.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230321-2
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20070.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230323-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20080.sql
+        relativeToChangelogFile: true
+- changeSet:
+    id: 20230327-1
+    author: i.borisovskiy
+    changes:
+    - sqlFile:
+        path: V1-20090.sql
+        relativeToChangelogFile: true

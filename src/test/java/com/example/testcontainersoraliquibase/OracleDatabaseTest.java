@@ -1,49 +1,49 @@
-//TODO need to fix java.lang.NullPointerException: Cannot invoke "org.testcontainers.containers.OracleContainer.start()" because "test.oracleContainer" is null
 
-package com.example.testcontainersoraliquibase;
+import static org.assertj.core.api.Assertions.assertThat;
 
-import java.io.IOException;
-import java.sql.SQLException;
-import liquibase.exception.LiquibaseException;
-import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
+import org.junit.ClassRule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ContextConfiguration;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.testcontainers.containers.OracleContainer;
-import org.testcontainers.containers.output.Slf4jLogConsumer;
-import org.testcontainers.junit.jupiter.Testcontainers;
 
-@Testcontainers
+import liquibase.Liquibase;
+import liquibase.exception.LiquibaseException;
+
+@RunWith(SpringRunner.class)
 @SpringBootTest
-@ContextConfiguration(classes = TestConfiguration.class)
-@TestInstance(TestInstance.Lifecycle.PER_CLASS)
-@Slf4j
 public class OracleDatabaseTest {
 
-  @Autowired
-  @Qualifier("oracleContainer")
-  public OracleContainer oracleContainer;
-  private final Slf4jLogConsumer logConsumer = new Slf4jLogConsumer(log);
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
-  @BeforeAll
-  public void setOracleContainer() {
-    oracleContainer.start();
-    oracleContainer.followOutput(logConsumer);
-    final String logs = oracleContainer.getLogs();
-    log.info("Container logs: {}", logs);
+    @Autowired
+    private Liquibase liquibase;
 
-  }
+    @ClassRule
+    public static OracleContainer oracle = new OracleContainer("gvenzl/oracle-xe:21-slim-faststart")
+            .withUsername("TSPLUS")
+            .withPassword("test");
 
-
-  @Test
-  public void shouldReturnNumberOfTables()
-      throws SQLException, IOException, InterruptedException, LiquibaseException {
-    System.out.println("Test STARTED");
-    // oracleContainer.execInContainer("sql", "SELECT 1 FROM DUAL");
-
-  }
+    /**
+     * This method is a JUnit test method that starts the Oracle database
+     * container, applies the database migrations, queries the number of tables
+     * in the database, and asserts that the count matches the expected value.
+     *
+     * @throws LiquibaseException if there is an error applying the database
+     * migrations
+     */
+    @Test
+    public void testOracleDb() throws LiquibaseException {
+        oracle.start();
+        liquibase.update("classpath:/db/changelog/db.changelog-master.yaml");
+        int tableCount = jdbcTemplate.queryForObject(
+                "SELECT count(table_name) FROM all_tables WHERE owner = 'TSPLUS'",
+                Integer.class
+        );
+        assertThat(tableCount).isEqualTo(5);
+    }
 }

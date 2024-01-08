@@ -13,4 +13,6 @@
   </root>
 
   <logger name="org.testcontainers" level="DEBUG"/>
+  <logger name="com.example.testcontainersoraliquibase" level="DEBUG"/>
+
 </configuration>
